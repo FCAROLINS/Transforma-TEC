@@ -1,43 +1,44 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiro Formulário</title>
+</head>
 <body>
-
-<p>Ao submeter o formulário, é retornada uma mensagem</p>
-
-<form action="/action_page.php" onsubmit="myFunction()" method="POST">
-
-  Seu nome: <input type="text" name="fname" id="fname">
-  
-  <br>
-  
-  Seu sobrenome: <input type="text" name="lname" id="lname">
-  
-  <br>
-  
-  Sua idade: <input type="number" name="age" id="age">
- 
-  <br>
-  
-  Aceitar termos: <input type="checkbox" id="agree" value="accept" required="true">
-  
-  <br>
-  
-   <input type="submit" value="Enviar">
-  
-</form>
-
-<script>
-
-function myFunction() {
-
-   var nome = document.getElementById("fname").value;
-   var sobrenome = document.getElementById("lname").value;
-   var idade = document.getElementById("age").value;
-   
-   alert("Nome: "+ nome + " " + sobrenome + "\n" + "Idade: " + idade);
-}
-
-</script>
-
+    <p><h2>Formulário de cadastro</h2></p>
+    <table>
+        <tr>
+            <td><label for="nome">Nome</label></td>
+        </tr>
+        <tr>
+            <td><input type="text" id="nome"></td>
+        </tr>
+        <tr>
+            <td><label for="sobrenome">Sobrenome</label></td>
+        </tr>
+        <tr>
+            <td><input type="text" id="sobrenome"></td>
+        </tr>
+        <tr>
+            <td><label for="email">Email</label></td>
+        </tr>
+        <tr>
+            <td><input type="email" name="email" id="email"></td>
+        </tr>
+        <tr>
+            <td><label for="datanasc">Data de nascimento</label></td>
+        </tr>
+        <tr>
+            <td><input type="date" name="datanasc" id="datanasc"></td>
+        </tr>
+        <tr>
+            <td><label for="endereco">Endereço</label></td>
+        </tr>
+        <tr>
+            <td><input type="text" name="endereco" id="endereco"></td>
+        </tr>
+    </table>
 </body>
 </html>
